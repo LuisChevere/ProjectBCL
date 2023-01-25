@@ -1,0 +1,25 @@
+{
+  "name": "projectbcl",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LuisChevere/ProjectBCL.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LuisChevere/ProjectBCL/issues"
+  },
+  "homepage": "https://github.com/LuisChevere/ProjectBCL#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mysql2": "^3.0.1",
+    "passport": "^0.6.0"
+  }
+}
