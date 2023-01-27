@@ -12,4 +12,4 @@ const priceFormat = (int) => {
 //console.log(priceFormat(793322.23)); returns $793,322.23
 
 
-//module.exports = priceFormat;
+module.exports = priceFormat;

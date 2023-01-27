@@ -1,0 +1,23 @@
+[
+    {
+        "first_name": "Luis",
+        "last_name": "Chevere",
+        "email": "luis.c@example.com",
+        "is_agent": true,
+        "password": "password1234"
+    },
+    {
+        "first_name": "Chase",
+        "last_name": "Lane",
+        "email": "chase.l@example.com",
+        "is_agent": true,
+        "password": "password1234"
+    },
+    {
+        "first_name": "Taylor",
+        "last_name": "Turner",
+        "email": "taylor.t@example.com",
+        "is_agent": true,
+        "password": "password1234"
+    }
+]

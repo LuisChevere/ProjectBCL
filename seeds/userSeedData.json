@@ -1,0 +1,100 @@
+[
+    {
+        "first_name": "Darrel",
+        "last_name": "Sherman",
+        "is_agent": false,
+        "email": "torenoc-are32@example.com",
+        "password": "password1234"
+    },
+    {
+        "first_name": "Garry",
+        "last_name": "Pittman",
+        "is_agent": false,
+        "email": "dubufo-yanu98@example.com",
+        "password": "password1234"
+    },
+    {
+        "first_name": "Janet",
+        "last_name": "Collier",
+        "is_agent": false,
+        "email": "fiyupo-vobo99@example.com",
+        "password": "password1234"
+    },
+    {
+        "first_name": "Carl",
+        "last_name": "Reed",
+        "is_agent": false,
+        "email": "ficuvat_ato14@example.com",
+        "password": "password1234"
+    },
+    {
+        "first_name": "Lewis",
+        "last_name": "Medina",
+        "is_agent": false,
+        "email": "fabiwo-mixu7@example.com",
+        "password": "password1234"
+    },
+    {
+        "first_name": "Hazel",
+        "last_name": "Steele",
+        "is_agent": false,
+        "email": "voyogij_eko37@example.com",
+        "password": "password1234"
+    },
+    {
+        "first_name": "Julio",
+        "last_name": "Harvey",
+        "is_agent": false,
+        "email": "reviten_oki30@example.com",
+        "password": "password1234"
+    },
+    {
+        "first_name": "Gail",
+        "last_name": "Stewart",
+        "is_agent": false,
+        "email": "pipeheb_uwo92@example.com",
+        "password": "password1234"
+    },
+    {
+        "first_name": "Erik",
+        "last_name": "Wolfe",
+        "is_agent": false,
+        "email": "koma-vuvoso75@example.com",
+        "password": "password1234"
+    },
+    {
+        "first_name": "Sandy",
+        "last_name": "Andrews",
+        "is_agent": false,
+        "email": "ras-ukuyesu80@example.com",
+        "password": "password1234"
+    },
+    {
+        "first_name": "Bradford",
+        "last_name": "Ferguson",
+        "is_agent": false,
+        "email": "xuhi-kicovo93@example.com",
+        "password": "password1234"
+    },
+    {
+        "first_name": "Elsie",
+        "last_name": "Barnett",
+        "is_agent": false,
+        "email": "tehey_obopa44@example.com",
+        "password": "password1234"
+    },
+    {
+        "first_name": "Tami",
+        "last_name": "Sims",
+        "is_agent": false,
+        "email": "xemulo_jeze62@example.com",
+        "password": "password1234"
+    },
+    {
+        "first_name": "Faye",
+        "last_name": "Herrera",
+        "is_agent": false,
+        "email": "olag_otafa37@example.com",
+        "password": "password1234"
+    }
+]

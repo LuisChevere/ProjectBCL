@@ -1,0 +1,26 @@
+[
+    {
+        "address": "8807 N. Thatcher Court, Akron OH 44312",
+        "price": 347592,
+        "owners_name": "Neal Fernandez",
+        "owners_email": "Neal.Fernandez@example.com"
+    },
+    {
+        "address": "759 Lawrence Drive, Levittown, NY 11756",
+        "price": 501900,
+        "owners_name": "Chelsea Gilbert",
+        "owners_email": "Chelsea.Gilbert@example.com"
+    },
+    {
+        "address": "68 South Tarkiln Hill Ave., Patchogue, NY 11772",
+        "price": 457390,
+        "owners_name": "Brandy Reeves",
+        "owners_email": "yucilaw_oge46@example.com"
+    },
+    {
+        "address": "452 La Sierra Lane, Pearl, MS 39208",
+        "price": 632000,
+        "owners_name": "Julian Drake",
+        "owners_email": "inijo-pub47@example.com"
+    }
+]

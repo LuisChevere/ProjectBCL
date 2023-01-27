@@ -20,7 +20,7 @@ User.init(
       allowNull: false,
     },
     is_agent: {
-      type: DataTypes.BOOLEAN = false,
+      type: DataTypes.BOOLEAN,
       allowNull: false,
   },
     email: {
