@@ -28,7 +28,7 @@ Agent.init(
       },
     },
     is_agent: {
-        type: DataTypes.BOOLEAN = true,
+        type: DataTypes.BOOLEAN,
         allowNull: false,
     },
     password: {
