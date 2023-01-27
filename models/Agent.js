@@ -1,9 +1,9 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
-class User extends Model {}
+class Agent extends Model {}
 
-User.init(
+Agent.init(
   {
     id: {
       type: DataTypes.INTEGER,
@@ -19,10 +19,6 @@ User.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
-    is_agent: {
-      type: DataTypes.BOOLEAN = false,
-      allowNull: false,
-  },
     email: {
       type: DataTypes.STRING,
       allowNull: false,
@@ -30,6 +26,10 @@ User.init(
       validate: {
         isEmail: true,
       },
+    },
+    is_agent: {
+        type: DataTypes.BOOLEAN = true,
+        allowNull: false,
     },
     password: {
       type: DataTypes.STRING,
@@ -44,8 +44,8 @@ User.init(
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: 'user',
+    modelName: 'agent',
   }
 );
 
-module.exports = User;
+module.exports = Agent;
