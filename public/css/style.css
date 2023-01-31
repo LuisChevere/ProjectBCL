@@ -94,7 +94,32 @@ a:hover {
     background-color: white;
     color: black;
     margin-top: 50px;
-    margin-left: 30%;
-    
+    margin-left: 50%;
+    padding-right: 70px;
 }
 
+.login {
+    /* display: table-caption; */
+    padding-left: 400px;
+    padding-right: 300px;
+    /* padding-top: 100px; */
+}
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+
+.meadow{
+    background-image: url('../images/meadow.jpeg');
+    height: 450px;
+    width: 100%;
+    /* margin-bottom: 25px; */
+    margin-top: 0%;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+.form-group{
+    color: black;
+}
