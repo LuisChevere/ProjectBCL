@@ -15,7 +15,7 @@
 <body>
     <div class="header">
         <div class="flex">
-                <img id="logo" src="/images/sb-logo.jpg"></img>
+            <img id="logo" src="/images/sb-logo.jpg"></img>
             <div class="links">
                 <h2><small>
                         <a href="./agents.html">Agents</a></small>
@@ -27,69 +27,79 @@
                         <a href="Reviews">Reviews</a></small>
                 </h2>
                 <h2><small>
+                        {{#if loggedIn}}
+                        <a href="/dashboard">dashboard</a>
+                        <button id="logout" class="btn-no-style logout">logout</button>
+                        {{else}}
                         <a href="Login">Login</a></small>
+                    {{/if}}
                 </h2>
             </div>
         </div>
     </div>
-        <div class="ranch">
-            <div class="topright">
-                <h3>Welcome to Spangled Banner Reality!</h3>
-                <div class="info">
-                <p>If you're looking for a private realty company that deals <br>with high quality Ranch homes, We're your guys!
-                    We're a homegrown Texas<br> company, so you know you're being taken care of like family around these parts.
-                    <br>Our mission is to help our clients find their forever homes in the south. We care about<br> your privacy,
-                    whether you're a seller or a buyer, we have your back! Our homes<br> can only be viewed exclusively by our members.
-                    Tired of your home information<br> being out for everyone to see?Then Join us today here<br> at Spangled Banner Realty,
+    <div class="ranch">
+        <div class="topright">
+            <h3>Welcome to Spangled Banner Reality!</h3>
+            <div class="info">
+                <p>If you're looking for a private realty company that deals <br>with high quality Ranch homes, We're
+                    your guys!
+                    We're a homegrown Texas<br> company, so you know you're being taken care of like family around these
+                    parts.
+                    <br>Our mission is to help our clients find their forever homes in the south. We care about<br> your
+                    privacy,
+                    whether you're a seller or a buyer, we have your back! Our homes<br> can only be viewed exclusively
+                    by our members.
+                    Tired of your home information<br> being out for everyone to see?Then Join us today here<br> at
+                    Spangled Banner Realty,
                     where we will service your every need!<br> -The Spangled Banner Team.
                 </p>
             </div>
-            </div>
         </div>
-        <div class="footer">
-            <div class="row">
-                <div class="col-sm-6 col-md-4">
-                    <div class="thumbnail">
-                        <img src="..." alt="...">
-                        <div class="caption">
-                            <h3>Chase W.</h3>
-                            <p>Agent</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-sm-6 col-md-4">
-                    <div class="thumbnail">
-                        <img src="..." alt="...">
-                        <div class="caption">
-                            <h3>Luis Chevere</h3>
-                            <p>Agent</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-sm-6 col-md-4">
-                    <div class="thumbnail">
-                        <img src="..." alt="...">
-                        <div class="caption">
-                            <h3>Taylor Turner</h3>
-                            <p>Agent</p>
-                        </div>
+    </div>
+    <div class="footer">
+        <div class="row">
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <img src="..." alt="...">
+                    <div class="caption">
+                        <h3>Chase W.</h3>
+                        <p>Agent</p>
                     </div>
                 </div>
             </div>
         </div>
 
-        <script src="https://code.jquery.com/jquery-1.12.4.min.js"
-            integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ"
-            crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js"
-            integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
-            crossorigin="anonymous"></script>
+        <div class="row">
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <img src="..." alt="...">
+                    <div class="caption">
+                        <h3>Luis Chevere</h3>
+                        <p>Agent</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <img src="..." alt="...">
+                    <div class="caption">
+                        <h3>Taylor Turner</h3>
+                        <p>Agent</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+        integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js"
+        integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
