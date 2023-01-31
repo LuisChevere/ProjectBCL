@@ -15,11 +15,18 @@
         <div class="login">
             <!-- post to a route with the name /register in the server, see server.js line 22-->
             <form class="form-horizontal" action="/register" method="POST">
-                <!-- create name field for user-->
+                <!-- create first name field for user-->
                 <div class="form-group">
                     <label for="name" class="col-sm-2 control-label">Name</label>
                     <div class="col-sm-10">
                         <input type="name" class="form-control" id="name" placeholder="Name" required>
+                    </div>
+                </div>
+                {{!-- creates last name for user --}}
+                <div class="form-group">
+                    <label for="last_name" class="col-sm-2 control-label">Last name</label>
+                    <div class="col-sm-10">
+                        <input type="last_name" class="form-control" id="last_name" placeholder="Last_name" required>
                     </div>
                 </div>
                 <div class="form-group">
