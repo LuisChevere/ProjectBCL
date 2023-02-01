@@ -84,7 +84,8 @@ a:hover {
 .agent-body{
     display: flex;
     justify-content: center;
-    margin-left: 100px;
+    margin-left: 20px;
+    margin-right: 20px;
     justify-content: space-between;
     margin-top: 10%;
 }
@@ -131,5 +132,11 @@ img{
 .thumbnail{
     width: 200px;
     height: 200px;
+    justify-content: center;
+}
+
+.agent-header{
+    color: black;
+    display: flex;
     justify-content: center;
 }
