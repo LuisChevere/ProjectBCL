@@ -31,6 +31,9 @@ Agent.init(
         type: DataTypes.BOOLEAN,
         allowNull: false,
     },
+    agent_img: {
+      type: DataTypes.STRING,
+    },
     password: {
       type: DataTypes.STRING,
       allowNull: false,

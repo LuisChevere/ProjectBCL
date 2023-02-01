@@ -4,6 +4,7 @@
         "last_name": "Chevere",
         "email": "luis.c@example.com",
         "is_agent": true,
+        "agent_img": "/images/luis.png",
         "password": "password1234"
     },
     {
@@ -11,6 +12,7 @@
         "last_name": "Lane",
         "email": "chase.l@example.com",
         "is_agent": true,
+        "agent_img": "/images/Chase.png",
         "password": "password1234"
     },
     {
