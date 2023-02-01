@@ -38,6 +38,7 @@ const users= []
 // allows use of ejs
 app.engine('handlebars', hbs.engine);
 app.set('view engine', 'handlebars');
+
 app.use(express.urlencoded({extended:false}))
 app.use(flash())
 app.use(session({
