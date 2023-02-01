@@ -140,3 +140,8 @@ img{
     display: flex;
     justify-content: center;
 }
+
+.review{
+    margin-left: 20px;
+    color: black;
+}
