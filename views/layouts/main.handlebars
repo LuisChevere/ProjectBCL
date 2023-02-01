@@ -15,74 +15,78 @@
 <body>
     <div class="header">
         <div class="flex">
-                <img id="logo" src="/images/sb-logo.jpg"></img>
+            <img id="logo" src="/images/sb-logo.jpg"></img>
             <div class="links">
                 <h2><small>
-                        <a href="./agents.html">Agents</a></small>
+                        <a href="/agents">Agents</a></small>
                 </h2>
                 <h2><small>
-                        <a href="Properties">Properties</a></small>
+                        <a href="/Properties">Properties</a></small>
                 </h2>
                 <h2><small>
-                        <a href="Reviews">Reviews</a></small>
+                        <a href="/Reviews">Reviews</a></small>
                 </h2>
                 <h2><small>
+                        {{#if loggedIn}}
+                        <a href="/homepage">homepage</a>
+                        <button id="logout" class="btn-no-style logout">logout</button>
+                        {{else}}
                         <a href="Login">Login</a></small>
+                    {{/if}}
                 </h2>
             </div>
         </div>
     </div>
-        <div class="ranch">
-            <div class="topright">
-                <h3>Welcome to Spangled Banner Reality!</h3>
-                <div class="info">
-                <p>If you're looking for a private realty company that deals <br>with high quality Ranch homes, We're your guys!
-                    We're a homegrown Texas<br> company, so you know you're being taken care of like family around these parts.
-                    <br>Our mission is to help our clients find their forever homes in the south. We care about<br> your privacy,
-                    whether you're a seller or a buyer, we have your back! Our homes<br> can only be viewed exclusively by our members.
-                    Tired of your home information<br> being out for everyone to see?Then Join us today here<br> at Spangled Banner Realty,
+    <div class="ranch">
+        <div class="topright">
+            <h3>Welcome to Spangled Banner Reality!</h3>
+            <div class="info">
+                <p>If you're looking for a private realty company that deals <br>with high quality Ranch homes, We're
+                    your guys!
+                    We're a homegrown Texas<br> company, so you know you're being taken care of like family around these
+                    parts.
+                    <br>Our mission is to help our clients find their forever homes in the south. We care about<br> your
+                    privacy,
+                    whether you're a seller or a buyer, we have your back! Our homes<br> can only be viewed exclusively
+                    by our members.
+                    Tired of your home information<br> being out for everyone to see?Then Join us today here<br> at
+                    Spangled Banner Realty,
                     where we will service your every need!<br> -The Spangled Banner Team.
                 </p>
             </div>
-            </div>
         </div>
-        <div class="footer">
-            <div class="row">
-                <div class="col-sm-6 col-md-4">
-                    <div class="thumbnail">
-                        <img src="..." alt="...">
-                        <div class="caption">
-                            <h3>Chase W.</h3>
-                            <p>Agent</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-sm-6 col-md-4">
-                    <div class="thumbnail">
-                        <img src="..." alt="...">
-                        <div class="caption">
-                            <h3>Luis Chevere</h3>
-                            <p>Agent</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-sm-6 col-md-4">
-                    <div class="thumbnail">
-                        <img src="..." alt="...">
-                        <div class="caption">
-                            <h3>Taylor Turner</h3>
-                            <p>Agent</p>
-                        </div>
-                    </div>
+    </div>
+    <div class="footer">
+        <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+                <a href="/agents"><img src="/public/images/Chase.png" alt="..."></a>
+                <div class="caption">
+                    <h3>Chase W.</h3>
+                    <p>Agent</p>
                 </div>
             </div>
         </div>
+
+        <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+                <a href="/agents"><img src="/public/images/luis.png" alt="..."></a>
+                <div class="caption">
+                    <h3>Luis Chevere</h3>
+                    <p>Agent</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+                <a href="/agents.html"><img src="/public/images/Bunny.png" alt="..."></a>
+                <div class="caption">
+                    <h3>Taylor Turner</h3>
+                    <p>Agent</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
         {{{body}}}
 

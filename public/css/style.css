@@ -99,10 +99,8 @@ a:hover {
 }
 
 .login {
-    /* display: table-caption; */
     padding-left: 400px;
     padding-right: 300px;
-    /* padding-top: 100px; */
 }
   
   input[type=submit]:hover {
@@ -113,7 +111,7 @@ a:hover {
     background-image: url('../images/meadow.jpeg');
     height: 450px;
     width: 100%;
-    /* margin-bottom: 25px; */
+  
     margin-top: 0%;
     background-size: cover;
     background-position: center;
@@ -122,4 +120,16 @@ a:hover {
 
 .form-group{
     color: black;
+}
+
+
+img{
+    width: 200px;
+    height: auto;
+}
+
+.thumbnail{
+    width: 200px;
+    height: 200px;
+    justify-content: center;
 }
