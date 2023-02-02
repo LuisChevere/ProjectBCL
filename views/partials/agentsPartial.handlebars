@@ -1,10 +1,15 @@
 {{#each agents as |agent|}}
     <div class="col-sm-2 col-md-1"></div>
-    <div class="col-sm-2 col-md-2 agent-display">
+    <div class="col-sm-2 
+    {{#if agent.bio}}agent-display-agent-page col-md-10
+    {{else}} agent-display-home col-md-2
+    {{/if}}">
         <a href="/agents"><img src="{{agent.agent_img}}" alt="real estate agent {{agent.first_name}}"></a>
         <div class="caption">
-            <h3>{{agent.first_name}} {{agent.last_name}}</h3>
-            <p>Agent</p>
+            <h2>{{agent.first_name}} {{agent.last_name}}</h2>
+            <p><h3>Agent</h3></p>
+             {{#if agent.bio}}<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil deleniti reiciendis magnam earum est consequatur harum ea ipsum dicta, eius voluptates ut quaerat deserunt nesciunt recusandae impedit expedita facilis quas.</p>
+             {{/if}}
         </div>
     </div>
     <div class="col-sm-2 col-md-1"></div>

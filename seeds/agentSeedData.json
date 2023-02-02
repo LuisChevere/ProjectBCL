@@ -5,6 +5,7 @@
         "email": "luis.c@example.com",
         "is_agent": true,
         "agent_img": "/images/luis.png",
+        "bio": "This is my bio",
         "password": "password1234"
     },
     {
@@ -13,6 +14,7 @@
         "email": "chase.l@example.com",
         "is_agent": true,
         "agent_img": "/images/Chase.png",
+        "bio": "This is my bio",
         "password": "password1234"
     },
     {
@@ -21,6 +23,7 @@
         "email": "taylor.t@example.com",
         "is_agent": true,
         "agent_img": "/images/Taylor.png",
+        "bio": "This is my bio",
         "password": "password1234"
     }
 ]
