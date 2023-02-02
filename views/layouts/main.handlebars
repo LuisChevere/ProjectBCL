@@ -15,23 +15,17 @@
 <body>
     <div class="header">
         <div class="flex">
-            <img id="logo" src="/images/sb-logo.jpg"></img>
+            <a href="/"><img id="logo" src="/images/sb-logo.jpg"></img></a>
             <div class="links">
-                <h2><small>
-                        <a href="/agents">Agents</a></small>
-                </h2>
-                <h2><small>
-                        <a href="/Properties">Properties</a></small>
-                </h2>
-                <h2><small>
-                        <a href="/Reviews">Reviews</a></small>
-                </h2>
-                <h2><small>
+                <h2><a href="/agents">Agents</a></h2>
+                <h2><a href="/Properties">Properties</a></h2>
+                <h2><a href="/Reviews">Reviews</a></h2>
+                <h2>
                         {{#if loggedIn}}
                         <a href="/dashboard">homepage</a>
                         <button id="logout" class="btn-no-style logout">logout</button>
                         {{else}}
-                        <a href="Login">Login</a></small>
+                        <a href="Login">Login</a>
                     {{/if}}
                 </h2>
             </div>
