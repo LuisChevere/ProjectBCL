@@ -20,6 +20,7 @@
         "last_name": "Turner",
         "email": "taylor.t@example.com",
         "is_agent": true,
+        "agent_img": "/images/Taylor.png",
         "password": "password1234"
     }
 ]
