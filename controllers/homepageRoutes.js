@@ -24,4 +24,13 @@ router.get("/login", async (req, res) => {
   }
 });
 
+//renders registration page
+router.get("/register", async (req, res) => {
+  try {
+    res.status(200).render("register");
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
+
 module.exports = router;
