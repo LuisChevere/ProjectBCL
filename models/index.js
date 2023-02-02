@@ -1,6 +1,7 @@
 const Agent = require("./Agent");
 const User = require("./User");
 const Property = require("./Property");
+const Review = require("./Review");
 
 
 Agent.hasMany(User, {
@@ -23,4 +24,26 @@ Property.belongsTo(Agent, {
     onDelete: 'CASCADE',
 });
 
-module.exports = {Agent, User, Property}
+Agent.hasMany(Review, {
+    foreignKey: 'agent_id',
+    onDelete: 'CASCADE',
+});
+
+Review.belongsTo(Agent, {
+    foreignKey: 'agent_id',
+    onDelete: 'CASCADE',
+});
+
+Review.belongsTo(User, {
+    foreignKey: 'user_id',
+    onDelete: 'CASCADE',
+});
+
+User.hasOne(Review, {
+    foreignKey: 'user_id',
+    onDelete: 'CASCADE',
+});
+
+
+
+module.exports = {Agent, User, Property, Review}
