@@ -1,4 +1,4 @@
-const { Agent } = require("../models");
+const { Agent, User, Property, Review } = require("../models");
 
 const router = require("express").Router();
 
