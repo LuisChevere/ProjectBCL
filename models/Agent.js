@@ -31,6 +31,9 @@ Agent.init(
         type: DataTypes.BOOLEAN,
         allowNull: false,
     },
+    bio: {
+      type: DataTypes.STRING,
+    },
     agent_img: {
       type: DataTypes.STRING,
     },

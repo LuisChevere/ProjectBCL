@@ -5,7 +5,9 @@ const router = require("express").Router();
 //get the main homepage 
 router.get("/", async (req, res) => {
   try {
-    const agentsData = await Agent.findAll();
+    const agentsData = await Agent.findAll({
+      attributes:{exclude:['bio']}
+    });
 
     const agents = agentsData.map((post) => post.get({ plain:true}))
 
@@ -33,4 +35,34 @@ router.get("/register", async (req, res) => {
   }
 });
 
+//renders reviews page
+router.get("/reviews", async (req, res) => {
+  try {
+    res.status(200).render("reviews");
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
+
+//renders agents page
+router.get("/agents", async (req, res) => {
+  try {
+    const agentsData = await Agent.findAll();
+
+    const agents = agentsData.map((post) => post.get({ plain:true}))
+
+    res.status(200).render("agents", {agents});
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
+
+//renders reviews page
+router.get("/reviews", async (req, res) => {
+  try {
+    res.status(200).render("reviews");
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
 module.exports = router;
