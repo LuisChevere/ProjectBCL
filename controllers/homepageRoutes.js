@@ -8,7 +8,7 @@ router.get("/", async (req, res) => {
 
     const agents = agentsData.map((post) => post.get({ plain:true}))
 
-    res.status(200).render("agents", {agents});
+    res.status(200).render("homepage", {agents});
   } catch (err) {
     res.status(500).json(err);
   }
