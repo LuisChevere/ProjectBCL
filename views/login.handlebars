@@ -1,42 +1,41 @@
 <div>
-  <h2><small>
-      <a href="/" class="agent-links">Return home</a></small>
+  <h2>
+      <a href="/" class="agent-links">Return home</a>
   </h2>
 </div>
-</div>
-<div class="meadow">
-  <div class="login">
-    <h1 class="login-register-hdr">Login</h1>
-    <!-- post to a route with the name /register in the server, see server.js line 22-->
-    <form class="form-horizontal" action="/login" method="POST">
-      <!-- create email field for user-->
-      <div class="form-group">
-        <label for="email" class="col-sm-2 control-label"></label>
-        <div class="col-sm-10">
-          <input type="email" class="form-control" id="email" placeholder="Email">
+ 
+    <div class="meadow">
+        <div class="login">
+          <h1 class="login-register-hdr">Login</h1>
+          <!-- post to a route with the name /register in the server, see server.js line 22-->
+          <form class="form-horizontal">
+            <!-- create email field for user-->
+            <div class="form-group">
+              <label for="email" class="col-sm-2 control-label"></label>
+              <div class="col-sm-10">
+                <input type="email" class="form-control" id="email-login" placeholder="Email">
+              </div>
+            </div>
+            <div class="form-group">
+              <!-- create password field for user-->
+              <label for="password" class="col-sm-2 control-label"></label>
+              <div class="col-sm-10">
+                <input type="password" class="form-control" id="password-login" placeholder="Password">
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-sm-offset-2 col-sm-10">
+              
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-sm-10 col-sm-10 form-buttons">
+                <button type="submit" id="login-btn" class="btn btn-success">Login</button>
+                <a class="btn btn-secondary" href="/register">Or Register</a>
+              </div>
+              
+            </div>
+          </form>
         </div>
-      </div>
-      <div class="form-group">
-        <!-- create password field for user-->
-        <label for="password" class="col-sm-2 control-label"></label>
-        <div class="col-sm-10">
-          <input type="password" class="form-control" id="password" placeholder="Password">
-        </div>
-      </div>
-      <div class="form-group">
-        <div class="col-sm-offset-2 col-sm-10">
-
-        </div>
-      </div>
-      <div class="form-group">
-        <div class="col-sm-10 col-sm-10 form-buttons">
-          <button type="submit" class="btn btn-success">Login</button>
-          <a class="btn btn-secondary" href="/register">Or Register</a>
-        </div>
-
-      </div>
-    </form>
-  </div>
-</div>
-
+    </div>
 </html>

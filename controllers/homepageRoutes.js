@@ -1,3 +1,5 @@
+const { deserializeUser } = require("passport");
+const { checkAuthenticated, checkNotAuthenticated } = require("../helpers");
 const { Agent, User, Property, Review } = require("../models");
 
 const router = require("express").Router();
@@ -11,7 +13,11 @@ router.get("/", async (req, res) => {
 
     const agents = agentsData.map((post) => post.get({ plain:true}))
 
-    res.status(200).render("homepage", {agents});
+    res.status(200).render("homepage", {
+      agents,
+      logged_in: req.session.logged_in,
+    });
+
   } catch (err) {
     res.status(500).json(err);
   }
@@ -37,12 +43,13 @@ router.get("/register", async (req, res) => {
 
 //renders reviews page
 router.get("/reviews", async (req, res) => {
-  try {
-    res.status(200).render("reviews");
-  } catch (err) {
-    res.status(500).json(err);
-  }
-});
+    console.log(req)
+    try {
+      res.status(200).render("reviews");
+    } catch (err) {
+      res.status(500).json(err);
+    }
+  });
 
 //renders agents page
 router.get("/agents", async (req, res) => {
@@ -51,7 +58,10 @@ router.get("/agents", async (req, res) => {
 
     const agents = agentsData.map((post) => post.get({ plain:true}))
 
-    res.status(200).render("agents", {agents});
+    res.status(200).render("agents", {
+      agents,
+      logged_in: req.session.logged_in,
+    });
   } catch (err) {
     res.status(500).json(err);
   }
@@ -65,6 +75,8 @@ router.get("/reviews", async (req, res) => {
     res.status(500).json(err);
   }
 });
+
+
 module.exports = router;
 
 //renders agents page
