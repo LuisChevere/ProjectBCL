@@ -1,0 +1,16 @@
+{{#each properties as |property|}}
+<div class="col-sm-2 col-md-1"></div>
+<div class="col-sm-2 
+    pagent-display-agent-page col-md-10">
+    <img src="{{property.property_image}}" alt="ranch property"/>
+    <div class="caption">
+        <h2>{{property.address}}</h2>
+        <h2>${{property.price}}</h2>
+        <p>
+        <h3>{{property.owners_name}}</h3>
+        </p>
+        
+    </div>
+</div>
+<div class="col-sm-2 col-md-1"></div>
+{{/each}}
