@@ -1,9 +1,6 @@
 const router = require("express").Router();
 const bcrypt = require("bcrypt");
-const { serializeUser, initialize } = require("passport");
-const passport = require("passport");
 const { User, Agent } = require("../../models");
-const initializePassport = require('../../passport-config')
 
 router.post("/register", async (req, res) => {
   // creating hashed password
@@ -23,14 +20,17 @@ router.post("/register", async (req, res) => {
     });
 
     const userData = await User.findOne({
-      where: {email: req.body.email}
-    })
+      where: { email: req.body.email },
+    });
 
     const user = userData.get({ plain: true });
 
-    res.status(200).json("OK")
+    req.session.save(() => {
+      req.session.user_id = user.id;
+      req.session.logged_in = true;
 
-    //res.status(200).render('agents');
+      res.status(200).json({ message: "You are now logged in!" });
+    });
   } catch (error) {
     console.log(error);
     res.status(500);
@@ -40,7 +40,7 @@ router.post("/register", async (req, res) => {
 router.post("/login", async (req, res) => {
   try {
     const userData = await User.findOne({ where: { email: req.body.email } });
-    const user = await userData.get({plain: true});
+    const user = await userData.get({ plain: true });
 
     if (!user) {
       res
@@ -60,12 +60,12 @@ router.post("/login", async (req, res) => {
     req.session.save(() => {
       req.session.user_id = user.id;
       req.session.logged_in = true;
+      req.session.invalid_creds = false;
 
       res.json({ message: "You are now logged in!" });
     });
-    
-  } catch (err) {
-    res.status(500).json(err);
+  } catch {
+    res.status(500).json();
   }
 });
 
@@ -78,6 +78,5 @@ router.post("/logout", (req, res) => {
     res.status(404).end();
   }
 });
-
 
 module.exports = router;
