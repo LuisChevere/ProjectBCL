@@ -4,20 +4,19 @@ const { Agent, User, Property, Review } = require("../models");
 
 const router = require("express").Router();
 
-//get the main homepage 
+//get the main homepage
 router.get("/", async (req, res) => {
   try {
     const agentsData = await Agent.findAll({
-      attributes:{exclude:['bio']}
+      attributes: { exclude: ["bio"] },
     });
 
-    const agents = agentsData.map((post) => post.get({ plain:true}))
+    const agents = agentsData.map((post) => post.get({ plain: true }));
 
     res.status(200).render("homepage", {
       agents,
       logged_in: req.session.logged_in,
     });
-
   } catch (err) {
     res.status(500).json(err);
   }
@@ -43,20 +42,20 @@ router.get("/register", async (req, res) => {
 
 //renders reviews page
 router.get("/reviews", async (req, res) => {
-    console.log(req)
-    try {
-      res.status(200).render("reviews");
-    } catch (err) {
-      res.status(500).json(err);
-    }
-  });
+  console.log(req);
+  try {
+    res.status(200).render("reviews");
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
 
 //renders agents page
 router.get("/agents", async (req, res) => {
   try {
     const agentsData = await Agent.findAll();
 
-    const agents = agentsData.map((post) => post.get({ plain:true}))
+    const agents = agentsData.map((post) => post.get({ plain: true }));
 
     res.status(200).render("agents", {
       agents,
@@ -76,18 +75,22 @@ router.get("/reviews", async (req, res) => {
   }
 });
 
-
-module.exports = router;
-
 //renders agents page
 router.get("/properties", async (req, res) => {
   try {
-    const propertiesData = await Property.findAll();
+    const propertiesData = await Property.findAll({
+      include: [{ model: Agent, as: "agent" }],
+    });
 
-    const properties = propertiesData.map((post) => post.get({ plain:true}))
+    const properties = propertiesData.map((post) => post.get({ plain: true }));
 
-    res.status(200).render("properties", {properties});
+    res.status(200).render("properties", {
+      properties,
+      logged_in: req.session.logged_in,
+    });
   } catch (err) {
     res.status(500).json(err);
   }
 });
+
+module.exports = router;

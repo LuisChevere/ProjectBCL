@@ -35,7 +35,11 @@ body {
 }
 
 .caption {
+  width: 100%;
+  margin: 25px;
+  display: flex;
   justify-content: center;
+  align-items: center;
   flex-direction: column;
 }
 
@@ -46,7 +50,24 @@ body {
   align-items: center;
   color: black;
   width: 50vw;
-  margin-right: 20px;
+  margin-right: 50px;
+}
+
+.logout-hdr {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  margin: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  text-align: start;
+}
+
+.logout-hdr:hover {
+  color: #23527c;
+  text-decoration: underline;
 }
 
 a:link {
@@ -140,9 +161,18 @@ input[type="submit"]:hover {
     100% {background-position: 0% 50%;}
 }
 
-.meadow {
+#login-alert {
+  color: white;
+  font-weight: 600;
   display: flex;
   justify-content: center;
+}
+
+.meadow {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-image: url("../images/meadow.jpeg");
   height: 83vh;
   width: 100%;
@@ -208,7 +238,7 @@ img {
   align-items: center;
   padding: 20px;
   margin-bottom: 25px;
-  background-color: rgba(141, 140, 140, 0.342);
+  background-color: rgba(141, 140, 140, 0.5);
   font-size: larger;
 }
 
@@ -219,5 +249,5 @@ img {
   align-items: center;
   padding: 20px;
   margin-bottom: 25px;
-  background-color: rgba(141, 140, 140, 0.342);
+  background-color: rgba(141, 140, 140, 0.596);
 }
