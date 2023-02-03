@@ -5,7 +5,7 @@
         "email": "luis.c@example.com",
         "is_agent": true,
         "agent_img": "/images/luis.png",
-        "bio": "This is my bio",
+        "bio": "Passionate realtor that can help you find that Rock n Roll style ranch home, with 15 years of experience, you cannot go wrong by choosing Luis. In his spare time, he is also a Johnny Depp impersonator!",
         "password": "password1234"
     },
     {
@@ -14,7 +14,7 @@
         "email": "chase.l@example.com",
         "is_agent": true,
         "agent_img": "/images/Chase.png",
-        "bio": "This is my bio",
+        "bio": "If you're looking for a family friendly realtor, he is a family man and can help you find a comfortable ranch home in a quaint town! He is often mistaken for Ryan Reynolds!",
         "password": "password1234"
     },
     {
@@ -23,7 +23,7 @@
         "email": "taylor.t@example.com",
         "is_agent": true,
         "agent_img": "/images/Taylor.png",
-        "bio": "This is my bio",
+        "bio": "When looking for a ranch home closer to the city, Taylor is your man! Taylor knows his way around cities like Chicago or Gotham. He knows all the big place to visit in city and can help you find a modern ranch home. When he's helped find your perfect home, he likes to say 'I am Batman'!",
         "password": "password1234"
     }
 ]
