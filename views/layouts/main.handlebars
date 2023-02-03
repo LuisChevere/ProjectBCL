@@ -21,9 +21,8 @@
                 <h2><a href="/Properties">Properties</a></h2>
                 <h2><a href="/Reviews">Reviews</a></h2>
                 <h2>
-                        {{#if loggedIn}}
-                        <a href="/dashboard">homepage</a>
-                        <button id="logout" class="btn-no-style logout">logout</button>
+                        {{#if logged_in}}
+                        <button id="logout" class="btn-no-style logout">Logout</button>
                         {{else}}
                         <a href="Login">Login</a>
                     {{/if}}
@@ -39,6 +38,9 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js"
             integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
             crossorigin="anonymous"></script>
+            <script src="/js/signup.js"></script>
+            <script src="/js/login.js"></script>
+            <script src="/js/logout.js"></script>
 </body>
 
 </html>
