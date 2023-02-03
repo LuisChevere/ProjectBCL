@@ -1,16 +1,22 @@
 {{#each properties as |property|}}
 <div class="col-sm-2 col-md-1"></div>
-<div class="col-sm-2 
-    pagent-display-agent-page col-md-10">
+<div class="col-sm-2 agent-display-agent-page col-md-10">
     <img src="{{property.property_image}}" alt="ranch property"/>
+    {{#if ../logged_in}}
     <div class="caption">
         <h2>{{property.address}}</h2>
         <h2>${{property.price}}</h2>
         <p>
-        <h3>{{property.owners_name}}</h3>
+        <h3>{{agent.first_name}} {{agent.last_name}}</h3>
         </p>
         
     </div>
+    {{else}}
+    <div class="caption">
+        <h2>Speak with {{agent.first_name}} {{agent.last_name}} for more information</h2>
+        <a href="/login"><h3>Login or become a member today!!</h3></a>
+    </div>
+    {{/if}}
 </div>
 <div class="col-sm-2 col-md-1"></div>
 {{/each}}
