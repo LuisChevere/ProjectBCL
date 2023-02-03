@@ -1,25 +1,29 @@
 [
     {
+        "property_image": "/images/neil_home.jpeg",
         "address": "8807 N. Thatcher Court, Akron OH 44312",
-        "price": 347592,
+        "price": "3,347,592.00",
         "owners_name": "Neal Fernandez",
         "owners_email": "Neal.Fernandez@example.com"
     },
     {
+        "property_image": "/images/chelsea_home.jpeg",
         "address": "759 Lawrence Drive, Levittown, NY 11756",
-        "price": 501900,
+        "price": "2,501,900.00",
         "owners_name": "Chelsea Gilbert",
         "owners_email": "Chelsea.Gilbert@example.com"
     },
     {
+        "property_image": "/images/Brandy_home.jpeg",
         "address": "68 South Tarkiln Hill Ave., Patchogue, NY 11772",
-        "price": 457390,
+        "price": "2,457,390.00",
         "owners_name": "Brandy Reeves",
         "owners_email": "yucilaw_oge46@example.com"
     },
     {
+        "property_image": "/images/julian_home.jpeg",
         "address": "452 La Sierra Lane, Pearl, MS 39208",
-        "price": 632000,
+        "price": "1,632,000.00",
         "owners_name": "Julian Drake",
         "owners_email": "inijo-pub47@example.com"
     }
