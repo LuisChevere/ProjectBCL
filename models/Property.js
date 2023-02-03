@@ -19,15 +19,15 @@ Property.init(
       },
     },
     price: {
-        type: DataTypes.INTEGER,
+        type: DataTypes.STRING,
         allowNull: false,
-        validate: {
-            isDecimal: true,
-        },
     },
     owners_name: {
       type: DataTypes.STRING,
       allowNull: false,
+    },
+    property_image: {
+      type: DataTypes.STRING,
     },
     owners_email: {
       type: DataTypes.STRING,

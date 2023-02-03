@@ -78,3 +78,16 @@ router.get("/reviews", async (req, res) => {
 
 
 module.exports = router;
+
+//renders agents page
+router.get("/properties", async (req, res) => {
+  try {
+    const propertiesData = await Property.findAll();
+
+    const properties = propertiesData.map((post) => post.get({ plain:true}))
+
+    res.status(200).render("properties", {properties});
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});

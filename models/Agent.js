@@ -32,7 +32,7 @@ Agent.init(
         allowNull: false,
     },
     bio: {
-      type: DataTypes.STRING,
+      type: DataTypes.TEXT,
     },
     agent_img: {
       type: DataTypes.STRING,

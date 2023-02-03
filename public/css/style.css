@@ -96,9 +96,7 @@ a:visited {
   display: flex;
   background-color: white;
   color: black;
-  margin-top: 50px;
-  margin-left: 50%;
-  padding-right: 70px;
+ padding-left: 75%;
 }
 
 .login {

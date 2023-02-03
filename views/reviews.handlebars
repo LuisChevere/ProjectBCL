@@ -1,28 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
+<div>
+    <h2><small>
+            <a href="/" class="agent-links">Return home</a></small>
+    </h2>
+</div>
+</div>
 
-    <body>
-    <div class="header">
-        <div class="flex">
-            <img id="logo" src="/images/sb-logo.jpg"></img>
-            <div class="agent-links">
-                <h2><small>
-                    <a href="/layout/main.handlebars" class="agent-links">Return home</a></small>
-                </h2>
-            </div>
-        </div>
-        <div class="agent-header">
-            <h1>Client Reviews</h1>
-        </div>
-        <div class="agent-body">
-                <div class="col-sm-6 col-md-4">
-                        <div class="review">
-                            <h3>Chase W.</h3>
-                            <p>Agent</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    </div>
-
-</html>
+<div class="agent-page-box">
+    <h1 class="login-register-hdr">Client Reviews</h1>
+    <section class="agent-page-agent-box">
+        {{> agentsPartial}}
+    </section>
+</div>
