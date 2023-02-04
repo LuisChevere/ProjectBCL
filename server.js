@@ -1,13 +1,13 @@
-if (process.env.PRODUCTION) {
-  require("dotenv").config();
-}
+// if (process.env.PRODUCTION) {
+//   require("dotenv").config();
+// }
 
 const path = require("path");
 const express = require("express");
 const session = require("express-session");
 const exphbs = require("express-handlebars");
 const routes = require("./controllers");
-
+require('dotenv');
 const sequelize = require("./config/connection");
 const SequelizeStore = require("connect-session-sequelize")(session.Store);
 
