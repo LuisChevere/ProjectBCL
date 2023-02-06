@@ -1,13 +1,12 @@
-// if (process.env.PRODUCTION) {
-//   require("dotenv").config();
-// }
+if (process.env.NODE_ENV !== "production") {
+  require("dotenv").config();
+}
 
 const path = require("path");
 const express = require("express");
 const session = require("express-session");
 const exphbs = require("express-handlebars");
 const routes = require("./controllers");
-//require('dotenv');
 const sequelize = require("./config/connection");
 const SequelizeStore = require("connect-session-sequelize")(session.Store);
 
@@ -15,8 +14,6 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 const hbs = exphbs.create({});
-
-
 
 app.use(
   session({

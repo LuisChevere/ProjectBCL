@@ -1,8 +1,5 @@
 const Sequelize = require('sequelize');
 
-
-//require('dotenv').config();
-
 // create connection to our db
 const sequelize = process.env.NODE_ENV == 'production'
   ? new Sequelize(process.env.JAWSDB_URL)
