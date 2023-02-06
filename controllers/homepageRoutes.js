@@ -101,8 +101,7 @@ router.get("/reviews", async (req, res) => {
     const reviews = reviewsData.map((post) => post.get({ plain: true }));
 
     res.status(200).render("reviews", {
-      reviews,
-      logged_in: req.session.logged_in,
+      reviews
     });
   } catch (err) {
     res.status(500).json(err);
