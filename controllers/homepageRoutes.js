@@ -1,5 +1,3 @@
-const { deserializeUser } = require("passport");
-const { checkAuthenticated, checkNotAuthenticated } = require("../helpers");
 const { Agent, User, Property, Review } = require("../models");
 
 const router = require("express").Router();
@@ -40,16 +38,6 @@ router.get("/register", async (req, res) => {
   }
 });
 
-//renders reviews page
-router.get("/reviews", async (req, res) => {
-  console.log(req);
-  try {
-    res.status(200).render("reviews");
-  } catch (err) {
-    res.status(500).json(err);
-  }
-});
-
 //renders agents page
 router.get("/agents", async (req, res) => {
   try {
@@ -61,15 +49,6 @@ router.get("/agents", async (req, res) => {
       agents,
       logged_in: req.session.logged_in,
     });
-  } catch (err) {
-    res.status(500).json(err);
-  }
-});
-
-//renders reviews page
-router.get("/reviews", async (req, res) => {
-  try {
-    res.status(200).render("reviews");
   } catch (err) {
     res.status(500).json(err);
   }
@@ -95,13 +74,19 @@ router.get("/properties", async (req, res) => {
 
 //renders reviews
 router.get("/reviews", async (req, res) => {
+  console.log("Reviews 2 hit");
   try {
-    const reviewsData = await Review.findAll();
+    const reviewsData = await Review.findAll({
+      include: [{ model: User, as: "user" }],
+    });
 
-    const reviews = reviewsData.map((post) => post.get({ plain: true }));
+    const reviews = reviewsData.map((review) => review.get({ plain: true }));
+
+    console.log(reviews);
 
     res.status(200).render("reviews", {
-      reviews
+      logged_in: req.session.logged_in,
+      reviews,
     });
   } catch (err) {
     res.status(500).json(err);
