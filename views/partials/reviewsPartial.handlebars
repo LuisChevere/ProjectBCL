@@ -1,14 +1,15 @@
 {{#each reviews as |review|}}
     <div class="col-sm-2 col-md-1"></div>
     <div class="col-sm-2 
-    {{#if review.client_name}}agent-display-agent-page col-md-10
-    {{else}} agent-display-home col-md-2
-    {{/if}}">
+    {{#if user.first_name}}agent-display-agent-page col-md-10">
+    {{else}} agent-display-home col-md-2">
+    {{/if}}
         <a href="/reviews"></a>
         <div class="caption">
             <h2>{{review.star}}</h2>
              {{#if review.client_review}}
              <p>{{review.client_review}}</p>
+             <h2>- {{user.first_name}} {{user.last_name}}</h2>
              {{/if}}
         </div>
     </div>
