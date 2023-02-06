@@ -6,4 +6,5 @@ const mysql = require('mysql2');
 // create connection to our db
 const sequelize = mysql.createConnection(process.env.JAWSDB_URL);
 
+sequelize.connect();
 module.exports = sequelize;
