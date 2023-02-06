@@ -3,12 +3,20 @@
 ![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)
 
   ## Table of Contents
+  - [User Story](#user-story)
   - [Description](#description)
   - [Installation](#installation)
   - [Usage](#usage)
   - [License](#license)
   - [Contributions](#contributions)
   - [Tests](#tests)
+
+## User Story
+```md
+AS AN exclusive, high end ranch home real real estate agent 
+I WANT a private website that I can display my listings on
+SO THAT only serious buyers can see them once we're in contact
+```
 
 ## Description
   This web application was design for clients who would like their privacy kept while selling or buying ranch realty.
@@ -18,10 +26,12 @@
   - npm i 
 
   ## Usage
-  This application is meant to be an exclusive real estate website for buying and selling impressive ranch style homes in Texas.
+  This application utilizes technologies through a MySql database and Javascript stack with a back end 
+  rendering through Handlebars templating. With html and css elements being manipulated through a 
+  Bootstrap framework alongside vanilla CSS styling.
 
-  [Launch Site]()
-  ![Screenshot]()
+  ## Deployed App: [SB Realty Website](https://spangled-banner-realty.herokuapp.com/)
+  ![Screenshot](./public/images/app-screenshot.PNG)
 
   ## Contributions
   - Luis Chevere: [@LuisChevere](https://github.com/LuisChevere) - Github
