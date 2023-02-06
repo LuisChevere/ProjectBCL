@@ -24,22 +24,12 @@ Property.belongsTo(Agent, {
     onDelete: 'CASCADE',
 });
 
-Agent.hasMany(Review, {
-    foreignKey: 'agent_id',
-    onDelete: 'CASCADE',
-});
-
-Review.belongsTo(Agent, {
-    foreignKey: 'agent_id',
-    onDelete: 'CASCADE',
-});
-
 Review.belongsTo(User, {
     foreignKey: 'user_id',
     onDelete: 'CASCADE',
 });
 
-User.hasOne(Review, {
+User.hasMany(Review, {
     foreignKey: 'user_id',
     onDelete: 'CASCADE',
 });

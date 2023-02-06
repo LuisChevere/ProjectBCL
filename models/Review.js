@@ -16,10 +16,6 @@ Review.init(
         allowNull: false,
         defaultValue: ""
     },
-    client_name: {
-      type: DataTypes.STRING,
-      allowNull: false,
-    },
     client_review: {
       type: DataTypes.TEXT,
       allowNull: false
