@@ -75,7 +75,7 @@ router.get("/reviews", async (req, res) => {
   }
 });
 
-//renders agents page
+//renders properties page
 router.get("/properties", async (req, res) => {
   try {
     const propertiesData = await Property.findAll({
@@ -86,6 +86,22 @@ router.get("/properties", async (req, res) => {
 
     res.status(200).render("properties", {
       properties,
+      logged_in: req.session.logged_in,
+    });
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
+
+//renders reviews
+router.get("/reviews", async (req, res) => {
+  try {
+    const reviewsData = await Review.findAll();
+
+    const reviews = reviewsData.map((post) => post.get({ plain: true }));
+
+    res.status(200).render("reviews", {
+      reviews,
       logged_in: req.session.logged_in,
     });
   } catch (err) {

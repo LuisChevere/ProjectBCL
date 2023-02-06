@@ -11,11 +11,19 @@ Review.init(
       primaryKey: true,
       autoIncrement: true,
     },
-    content: {
+    star: {
         type: DataTypes.STRING,
         allowNull: false,
         defaultValue: ""
     },
+    client_name: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+    client_review: {
+      type: DataTypes.TEXT,
+      allowNull: false
+    }
   },
   {
     sequelize,

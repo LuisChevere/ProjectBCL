@@ -1,0 +1,22 @@
+[
+    {
+        "client_name": "Jeremy Thomas",
+        "review": "Amazing customer service, privacy kept",
+        "star": "⭐⭐⭐⭐⭐"
+    },
+    {
+        "client_name": "Kristen Baker",
+        "client_review": "My privacy is very important and SB realty not only kept it that way but their customer service was fantastic!",
+        "star": "⭐⭐⭐⭐⭐"
+    },
+    {
+        "client_name": "Stu Smith",
+        "client_review": "These agents were not only amazing at their jobs, but really made the process easy!",
+        "star": "⭐⭐⭐⭐⭐"
+    },
+    {
+        "client_name": "Michael Scott",
+        "client_review": "I wish I could give SB Realty a higher rating that 5 stars! They were incredible and I can't recommend them enough to my friends!",
+        "star": "⭐⭐⭐⭐⭐"
+    }
+]
