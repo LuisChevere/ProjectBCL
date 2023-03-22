@@ -1,4 +1,5 @@
 # SB Realty
+A privatized realty company application
 
 ![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)
 
